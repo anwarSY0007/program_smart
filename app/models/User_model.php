@@ -1,10 +1,17 @@
 <?php
 
 class User_model{
+    private $table = 'data_admin';
+    private $db;
 
-    private $nama = 'Admin';
+    public function __construct()
+    {
+        $this->db = new Database;
+        
+    }
     public function getUser()
     {
-        return $this->nama;
+        $this->db->query('SELECT * FROM ' . $this->table);
+        return $this->db->resultSet();
     }
 }

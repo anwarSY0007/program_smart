@@ -49,7 +49,7 @@
                     <span>Dashboard</span></a>
             </li>
              <li class="nav-item">
-                <a class="nav-link" href="<?= BASEURL?>/user">
+                <a class="nav-link" href="<?= BASEURL?>/users">
                     <i class="fas fa-fw fa-users"></i>
                     <span>User</span></a>
             </li>

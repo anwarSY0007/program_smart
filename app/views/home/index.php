@@ -74,7 +74,7 @@
 
 
     <div class="container">
-        <h1>Hallo nama saya <?= $data['nama']?></h1>
+        Belum ada data
     </div>
 
 </div>
