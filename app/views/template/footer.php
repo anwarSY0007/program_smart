@@ -61,6 +61,11 @@
 
     <!-- Page level custom scripts -->
     <script src="<?= BASEURL?>js/demo/datatables-demo.js"></script>
+
+    <!-- own script -->
+    <script src="<?= BASEURL?>js/script.js"></script>
+
+
 </body>
 
 </html>

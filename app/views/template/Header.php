@@ -54,17 +54,20 @@
                     <span>User</span></a>
             </li>
              <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= BASEURL?>kriteria">
                     <i class="fas fa-fw fa-list"></i>
                     <span>Kriteria</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?= BASEURL?>/siswa">
+                <a class="nav-link" href="<?= BASEURL?>siswa">
                     <i class="fas fa-fw fa-graduation-cap"></i>
                     <span>Data Siswa</span></a>
             </li>
-            
-
+            <li class="nav-item">
+                <a class="nav-link" href="<?= BASEURL?>hasil">
+                    <i class="fas fa-fw fa-brain"></i>
+                    <span>Data Hasil Siswa</span></a>
+            </li>
 
 
         </ul>
