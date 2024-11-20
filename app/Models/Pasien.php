@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Pasien extends Model
@@ -46,5 +47,10 @@ class Pasien extends Model
                 $model->nomor_rekam_medis = 'RM-' . uniqid(); // Menghasilkan nomor rekam medis otomatis
             }
         });
+    }
+
+    public function supplier(): BelongsTo
+    {
+        return $this->belongsTo(Perhitungan::class);
     }
 }
