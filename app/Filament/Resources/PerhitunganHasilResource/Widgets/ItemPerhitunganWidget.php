@@ -28,6 +28,7 @@ class ItemPerhitunganWidget extends BaseWidget
                 return TextColumn::make("alternatif.a{$criterion['index']}")
                     ->label($criterion['label'])
                     ->alignCenter()
+                    // ->columnSpanFull()
                     ->getStateUsing(function ($record) use ($criterion) {
                         $variabels = Variabel::all()->keyBy('id');
                         return $record->alternatif->{"a{$criterion['index']}"} * ($variabels[$criterion['index']]?->bobot ?? 0) / 100;
